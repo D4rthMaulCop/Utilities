@@ -54,3 +54,4 @@ if __name__ == "__main__":
         print("\t--usernames")
         print("\t--mail")
         print("[+] Example:  python domaindump_parser.py --usernames domain_users.json output.txt")
+        
