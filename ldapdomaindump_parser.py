@@ -1,3 +1,6 @@
+# TODO 
+# fix extracdNSHostName (parses weird)
+
 import json
 import sys
 
