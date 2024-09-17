@@ -1,4 +1,5 @@
 #!/usr/bin/zsh
+
 # misc
 mkdir /root/Tools
 touch ~/.hushlogin
@@ -17,6 +18,7 @@ mkdir /root/Client-Data/Scope
 pip install git+https://github.com/blacklanternsecurity/trevorproxy
 pip install git+https://github.com/blacklanternsecurity/trevorspray
 git clone https://github.com/0xZDH/o365spray.git /root/Tools/o365spray
+git clone https://github.com/knavesec/CredMaster.git /root/Tools/CredMaster
 
 # installing additional tools
 apt install -y seclists
