@@ -4,9 +4,6 @@
 mkdir /root/Tools
 touch ~/.hushlogin
 
-# update repo
-apt update
-
 # create engagement data folders
 mkdir /root/Client-Data
 mkdir /root/Client-Data/Scan\ Data
@@ -14,11 +11,8 @@ mkdir /root/Client-Data/Exploits
 mkdir /root/Client-Data/Loot
 mkdir /root/Client-Data/Scope
 
-# installing tools from github
-pip install git+https://github.com/blacklanternsecurity/trevorproxy
-pip install git+https://github.com/blacklanternsecurity/trevorspray
-git clone https://github.com/0xZDH/o365spray.git /root/Tools/o365spray
-git clone https://github.com/knavesec/CredMaster.git /root/Tools/CredMaster
+# update repo
+apt update
 
 # installing additional tools
 apt install -y seclists
@@ -39,6 +33,12 @@ apt install -y nikto
 apt install -y theharvester
 apt install -y amass
 apt install -y nmap
+
+# installing tools from github
+pip install git+https://github.com/blacklanternsecurity/trevorproxy
+pip install git+https://github.com/blacklanternsecurity/trevorspray
+git clone https://github.com/0xZDH/o365spray.git /root/Tools/o365spray
+git clone https://github.com/knavesec/CredMaster.git /root/Tools/CredMaster
 
 # disable password auth and only allow priv/pub key auth
 sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
